@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f5ede0"/>
+      <stop offset="100%" style="stop-color:#e8d5bb"/>
+    </linearGradient>
+    <linearGradient id="bookGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#c8905a"/>
+      <stop offset="100%" style="stop-color:#a06535"/>
+    </linearGradient>
+    <linearGradient id="pageGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#fffdf8"/>
+      <stop offset="100%" style="stop-color:#f5ede0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Rounded square background -->
+  <rect width="512" height="512" rx="110" ry="110" fill="url(#bg)"/>
+
+  <!-- Subtle inner glow border -->
+  <rect width="512" height="512" rx="110" ry="110" fill="none" stroke="rgba(181,128,77,0.2)" stroke-width="2"/>
+
+  <!-- Book body (left cover) -->
+  <rect x="108" y="138" width="148" height="236" rx="8" fill="url(#bookGrad)"/>
+
+  <!-- Book spine shadow -->
+  <rect x="240" y="138" width="16" height="236" rx="2" fill="rgba(0,0,0,0.15)"/>
+
+  <!-- Book body (right pages) -->
+  <rect x="256" y="138" width="148" height="236" rx="8" fill="url(#pageGrad)"/>
+  <rect x="256" y="138" width="148" height="236" rx="8" fill="none" stroke="rgba(181,128,77,0.3)" stroke-width="1.5"/>
+
+  <!-- Page lines on right side -->
+  <line x1="278" y1="185" x2="382" y2="185" stroke="rgba(176,140,95,0.35)" stroke-width="2" stroke-linecap="round"/>
+  <line x1="278" y1="205" x2="382" y2="205" stroke="rgba(176,140,95,0.35)" stroke-width="2" stroke-linecap="round"/>
+  <line x1="278" y1="225" x2="360" y2="225" stroke="rgba(176,140,95,0.35)" stroke-width="2" stroke-linecap="round"/>
+  <line x1="278" y1="260" x2="382" y2="260" stroke="rgba(176,140,95,0.35)" stroke-width="2" stroke-linecap="round"/>
+  <line x1="278" y1="280" x2="382" y2="280" stroke="rgba(176,140,95,0.35)" stroke-width="2" stroke-linecap="round"/>
+  <line x1="278" y1="300" x2="350" y2="300" stroke="rgba(176,140,95,0.35)" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Cross on left cover -->
+  <rect x="170" y="200" width="26" height="90" rx="4" fill="rgba(255,255,255,0.55)"/>
+  <rect x="140" y="228" width="86" height="26" rx="4" fill="rgba(255,255,255,0.55)"/>
+
+  <!-- Bookmark ribbon -->
+  <polygon points="295,138 315,138 315,175 305,165 295,175" fill="#b5804d" opacity="0.9"/>
+
+  <!-- Subtle sun/glow rays at top -->
+  <circle cx="256" cy="95" r="18" fill="rgba(181,128,77,0.15)"/>
+  <circle cx="256" cy="95" r="10" fill="rgba(181,128,77,0.25)"/>
+  <circle cx="256" cy="95" r="4" fill="rgba(181,128,77,0.6)"/>
+</svg>
